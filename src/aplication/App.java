@@ -32,6 +32,8 @@ public class App {
                 System.out.println("entre com o numero de funcionarios: ");
                 int numeroDeFuncionarios = sc.nextInt();
                 list.add(new PessoaJuridica(name,rendaAnual,numeroDeFuncionarios));
+            } else {
+                System.out.printf("entrada invalida!!");
             }
             for (Pessoa pessoa : list){
                 System.out.println(pessoa.getName() + " $ - " + pessoa.rendaFinal(rendaAnual));
